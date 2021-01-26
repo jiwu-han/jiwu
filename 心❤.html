@@ -10,6 +10,9 @@
 			display: flex;
         	justify-content: center;
 		}
+		.main{
+			animation: y 10s 0s infinite;
+		}
 		ul{
 			position: relative;
 			display: flex;
@@ -23,204 +26,183 @@
 		}
 		li:nth-child(1) {
 			background-color: orange;
-			animation: x0 4s 0s infinite;
+			animation: x0 10s 0s infinite;
 		}
 		li:nth-child(2) {
 			background-color: orange;
-			animation: x1 4s 0s infinite;
+			animation: x1 10s 0s infinite;
 		}
 		li:nth-child(3) {
 			background-color: yellow;
-			animation: x2 4s 0s infinite;
+			animation: x2 10s 0s infinite;
 		}
 		li:nth-child(4) {
 			background-color: lightgreen;
-			animation: x3 4s 0s infinite;
+			animation: x3 10s 0s infinite;
 		}
 		li:nth-child(5) {
 			background-color: teal;
-			animation: x4 4s 0s infinite;
+			animation: x4 10s 0s infinite;
 		}
 		li:nth-child(6) {
 			background-color: lightblue;
-			animation: x5 4s 0s infinite;
+			animation: x5 10s 0s infinite;
 		}
 		li:nth-child(7) {
 			background-color: #ADD8E6;
-			animation: x6 4s 0s infinite;
+			animation: x6 10s 0s infinite;
 		}
 		li:nth-child(8) {
 			background-color: #D3D3D3;
-			animation: x7 4s 0s infinite;
+			animation: x5 10s 0s infinite;
 		}
 		li:nth-child(9) {
 			background-color: #DEB887;
-			animation: x8 4s 0s infinite;
+			animation: x4 10s 0s infinite;
 		}
 		li:nth-child(10) {
 			background-color: pink;
-			animation: x9 4s 0s infinite;
+			animation: x3 10s 0s infinite;
 		}
 		li:nth-child(11) {
 			background-color: #FFB6C1;
-			animation: x10 4s 0s infinite;
+			animation: x2 10s 0s infinite;
 		}
 		li:nth-child(12) {
 			background-color: white;
-			animation: x11 4s 0s infinite;
+			animation: x1 10s 0s infinite;
 		}
 		li:nth-child(13) {
 			background-color: #F5F5F5;
-			animation: x12 4s 0s infinite;
+			animation: x0 10s 0s infinite;
+		}
+		@keyframes y{
+			10%{
+				transform: translate(0px,100px);
+			}
+			15%{
+				transform: scale(1.5);
+			}
+			20%{
+				transform: translate(-100px,150px);
+			}
+			25%{
+				transform: rotate(-20deg);
+			}
+			22%{
+				transform: scale(0.5);
+			}
+			30%{
+				transform: rotateY(180deg);
+			}
+			35%{
+				transform: translate(100px,200px);
+			}
+			40%{
+				transform: rotateX(-710deg);
+			}
+			45%{
+				transform: translate(0px,70px);
+			}
+			50%{
+				transform: rotateX(180deg);
+			}
+			65%{
+				transform: scale(0.3);
+			}
+			70%{
+				transform: scale(1.5);
+			}
+			75%{
+				transform: translateX(100px);
+			}
+			76%{
+				transform: translateY(50px);
+			}
+			78%{
+				transform: translateY(0px);
+			}
+			79%{
+				transform: scale(0.8);
+			}
+			84%{
+				transform: scale(1);
+			}
 		}
 		@keyframes x0{
-			25%{
+			10%,
+			20%,90%{
 				height: 110px;
 				transform: translateY(210px);
 			}
-			50%;
-			75%,
 			100%{
 				height: 10px;
 			}
 		}
 		@keyframes x1{
-			25%{
+			10%,
+			20%,90%{
 				height: 170px;
 				transform: translateY(180px);
 			}
-			50%;
-			75%,
 			100%{
 				height: 10px;
 			}
 		}
 		@keyframes x2{
-			25%{
+			10%,
+			20%,90%{
 				height: 220px;
 				transform: translateY(160px);
 			}
-			50%;
-			75%,
 			100%{
 				height: 10px;
 			}
 		}
 		@keyframes x3{
-			25%{
+			10%,
+			20%,90%{
 				height: 240px;
 				transform: translateY(150px);
 			}
-			50%;
-			75%,
 			100%{
 				height: 10px;
 			}
 		}
 		@keyframes x4{
-			25%{
+			10%,
+			20%,90%{
 				height: 260px;
 				transform: translateY(150px);
 			}
-			50%;
-			75%,
 			100%{
 				height: 10px;
 			}
 		}
 		@keyframes x5{
-			25%{
+			10%,
+			20%,90%{
 				height: 265px;
 				transform: translateY(155px);
 			}
-			50%;
-			75%,
 			100%{
 				height: 10px;
 			}
 		}
 		@keyframes x6{
-			25%{
+			10%,
+			20%,90%{
 				height: 265px;
 				transform: translateY(170px);
 			}
-			50%;
-			75%,
 			100%{
 				height: 10px;
 			}
 		}
-		@keyframes x7{
-			25%{
-				height: 265px;
-				transform: translateY(155px);
-			}
-			50%;
-			75%,
-			100%{
-				height: 10px;
-			}
-		}
-		@keyframes x8{
-			25%{
-				height: 260px;
-				transform: translateY(150px);
-			}
-			50%;
-			75%,
-			100%{
-				height: 10px;
-			}
-		}
-		@keyframes x9{
-			25%{
-				height: 240px;
-				transform: translateY(150px);
-			}
-			50%;
-			75%,
-			100%{
-				height: 10px;
-			}
-		}
-		@keyframes x10{
-			25%{
-				height: 220px;
-				transform: translateY(160px);
-			}
-			50%;
-			75%,
-			100%{
-				height: 10px;
-			}
-		}
-		@keyframes x11{
-			25%{
-				height: 170px;
-				transform: translateY(180px);
-			}
-			50%;
-			75%,
-			100%{
-				height: 10px;
-			}
-		}
-		@keyframes x12{
-			25%{
-				height: 110px;
-				transform: translateY(210px);
-			}
-			50%;
-			75%,
-			100%{
-				height: 10px;
-			}
-		}
-
 	</style>
 </head>
 <body>
-	<div>
+	<div class="main">
 		<ul>
 		  <li></li>
 	      <li></li>
